@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Triple Biotix 30 Billion CFU | Lab Biotix</title>
+  <meta name="description" content="Triple Biotix 30 Billion CFU — Prebiotik, Probiotik & Postbiotik dengan L-Carnitine. 0% gula, perisa Mix Berry. Sokong kesihatan usus, penghadaman & imuniti.">
+  <meta name="theme-color" content="#0b1f4d">
+  <meta property="og:title" content="Triple Biotix 30 Billion CFU — Usus Sihat, Hidup Lebih Berkualiti">
+  <meta property="og:description" content="Triple-Action Complete Gut Care. Prebiotik + Probiotik + Postbiotik + L-Carnitine. 0% gula.">
+  <meta property="og:image" content="assets/img/product-box-sachet.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Kalam:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__ring"><span></span><span></span><span></span></div>
+  <div class="preloader__brand">Lab <b>Biotix</b></div>
+</div>
+
+<!-- Scroll progress -->
+<div class="progress" id="progress"></div>
+
+<!-- Header -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="brand-pill">Lab <b>Biotix</b></a>
+    <nav class="nav__links" aria-label="Navigasi utama">
+      <a href="#masalah">Masalah</a>
+      <a href="#solusi">Solusi</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#luckydraw">Lucky Draw</a>
+      <a href="#promosi">Promosi</a>
+      <a href="#soalan">Soalan Lazim</a>
+    </nav>
+    <a href="#promosi" class="btn btn--sm btn--glow magnetic">Dapatkan Promosi</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO (masalah utama, tanpa sebut produk) ================= -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow reveal">⚠️ Isu yang ramai pandang ringan</span>
+        <h1 class="hero__title">
+          <span class="line"><span class="reveal-text">Perut selalu kembung,</span></span>
+          <span class="line"><span class="reveal-text">sembelit berhari-hari,</span></span>
+          <span class="line"><span class="reveal-text grad">tapi anggap ia <em>“biasa”?</em></span></span>
+        </h1>
+        <p class="hero__lead reveal" data-delay="0.5">
+          Usus anda bukan sekadar tempat hadam makanan. Di situlah <strong>sebahagian besar sistem imun</strong> anda berada,
+          dan ia juga menghasilkan anggaran <strong>90% serotonin</strong> badan. Bila usus tak seimbang, satu badan menerima kesannya:
+          cepat letih, kulit kusam, mudah sakit, dan emosi tak stabil.
+        </p>
+
+        <div class="hero__stats reveal" data-delay="0.7">
+          <div class="stat">
+            <div class="stat__num"><span class="count" data-to="32.3" data-decimals="1">0</span>%</div>
+            <div class="stat__label">warga emas di Pantai Timur Semenanjung Malaysia mengalami sembelit kronik*</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num"><span class="count" data-to="84.6" data-decimals="1">0</span>%</div>
+            <div class="stat__label">orang dewasa yang dikaji makan serat kurang daripada 25g sehari*</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">~<span class="count" data-to="90">0</span>%</div>
+            <div class="stat__label">serotonin (hormon “rasa gembira”) dihasilkan di dalam usus</div>
+          </div>
+        </div>
+
+        <div class="hero__cta reveal" data-delay="0.9">
+          <a href="#masalah" class="btn btn--glow btn--lg magnetic">Semak Simptom Anda <span class="arrow">→</span></a>
+          <a href="#solusi" class="btn btn--ghost btn--lg">Saya nak penyelesaian</a>
+        </div>
+        <p class="footnote reveal" data-delay="1">*Kajian keratan rentas di Malaysia. Rujukan penuh di bahagian bawah laman.</p>
+      </div>
+
+      <div class="hero__visual reveal" data-delay="0.3">
+        <div class="gut-orb" id="gutOrb">
+          <svg viewBox="0 0 400 400" class="gut-svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="gutGrad" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#3fd8c7"/>
+                <stop offset=".5" stop-color="#4b8bff"/>
+                <stop offset="1" stop-color="#9a6bff"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#4b8bff" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#4b8bff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="200" cy="200" r="190" fill="url(#glow)"/>
+            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,.12)" stroke-dasharray="4 8" class="spin-slow"/>
+            <circle cx="200" cy="200" r="175" fill="none" stroke="rgba(255,255,255,.08)" stroke-dasharray="2 12" class="spin-rev"/>
+            <!-- stylised intestine path -->
+            <path class="gut-path" d="M130 120 C 90 120, 90 170, 130 170 L 270 170 C 310 170, 310 210, 270 210 L 130 210 C 90 210, 90 250, 130 250 L 270 250 C 310 250, 310 290, 270 290 L 200 290 L 200 330"
+                  fill="none" stroke="url(#gutGrad)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M130 120 L 200 120 L 200 80" fill="none" stroke="url(#gutGrad)" stroke-width="22" stroke-linecap="round" opacity=".9" class="gut-path"/>
+            <g class="bacteria">
+              <circle class="b b1" cx="150" cy="190" r="6"/>
+              <circle class="b b2" cx="240" cy="230" r="5"/>
+              <circle class="b b3" cx="180" cy="270" r="7"/>
+              <circle class="b b4" cx="260" cy="150" r="4"/>
+              <circle class="b b5" cx="120" cy="235" r="5"/>
+            </g>
+          </svg>
+          <div class="orb-tag orb-tag--1"><span class="dot dot--red"></span>Kembung</div>
+          <div class="orb-tag orb-tag--2"><span class="dot dot--amber"></span>Sembelit</div>
+          <div class="orb-tag orb-tag--3"><span class="dot dot--red"></span>Mudah Letih</div>
+          <div class="orb-tag orb-tag--4"><span class="dot dot--amber"></span>Imun Lemah</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#masalah" class="scroll-cue" aria-label="Skrol ke bawah"><span></span></a>
+  </section>
+
+  <!-- ================= PROBLEM ================= -->
+  <section class="section problem" id="masalah">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark reveal">Masalah</span>
+        <h2 class="reveal">Anda alami <span class="grad-dark">salah satu</span> daripada ini?</h2>
+        <p class="reveal">Ramai sangka simptom ini tiada kaitan antara satu sama lain. Hakikatnya, banyak yang berpunca daripada
+          <strong>ketidakseimbangan bakteria dalam usus</strong> (dysbiosis), iaitu bila bakteria jahat lebih banyak daripada bakteria baik.</p>
+      </div>
+
+      <div class="problem__grid">
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🎈</div>
+          <h3>Perut Kembung & Banyak Angin</h3>
+          <p class="pcard__sym">Perut rasa penuh, sendawa, kentut berlebihan selepas makan.</p>
+          <div class="pcard__cause"><span>Punca</span> Makanan tak dihadam sempurna lalu ditapai bakteria jahat, menghasilkan gas berlebihan.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🚽</div>
+          <h3>Sembelit & Buang Air Tak Lawas</h3>
+          <p class="pcard__sym">2–3 hari sekali, najis keras, rasa tak habis buang.</p>
+          <div class="pcard__cause"><span>Punca</span> Kurang serat & air, kurang bakteria baik, pergerakan usus perlahan.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🔥</div>
+          <h3>Gastrik & Pedih Ulu Hati</h3>
+          <p class="pcard__sym">Pedih, rasa terbakar dan loya, terutama bila lewat makan.</p>
+          <div class="pcard__cause"><span>Punca</span> Waktu makan tak teratur, stres, makanan pedas/berminyak dan lapisan usus yang lemah.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🦠</div>
+          <h3>Cirit-Birit & Perut Meragam</h3>
+          <p class="pcard__sym">Kerap ke tandas, perut memulas, terutama selepas makan di luar.</p>
+          <div class="pcard__cause"><span>Punca</span> Bakteria jahat mengambil alih, kesan antibiotik atau makanan tercemar.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🛡️</div>
+          <h3>Imuniti Lemah, Kerap Demam & Selsema</h3>
+          <p class="pcard__sym">Mudah jatuh sakit dan lambat sembuh.</p>
+          <div class="pcard__cause"><span>Punca</span> Sebahagian besar sel imun berada di usus. Bila mikrobiom terganggu, pertahanan badan turut lemah.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">🔋</div>
+          <h3>Cepat Letih & Kurang Fokus</h3>
+          <p class="pcard__sym">Tak bermaya walaupun cukup tidur, otak berkabut (“brain fog”).</p>
+          <div class="pcard__cause"><span>Punca</span> Nutrien tak diserap sepenuhnya, keradangan senyap dan paksi usus–otak yang terganggu.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">😣</div>
+          <h3>Mood Tak Stabil & Susah Tidur</h3>
+          <p class="pcard__sym">Mudah resah, stres dan tidur tak lena.</p>
+          <div class="pcard__cause"><span>Punca</span> Kira-kira 90% serotonin dihasilkan di usus. Usus tak sihat boleh mengganggu keseimbangan ini.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">✨</div>
+          <h3>Kulit Kusam, Jerawat & Bau Mulut</h3>
+          <p class="pcard__sym">Kulit tak berseri dan nafas kurang segar.</p>
+          <div class="pcard__cause"><span>Punca</span> Toksin & keradangan dari usus yang tak seimbang boleh terzahir pada kulit dan mulut.</div>
+        </article>
+
+        <article class="pcard tilt reveal">
+          <div class="pcard__icon">⚖️</div>
+          <h3>Berat Badan Susah Turun</h3>
+          <p class="pcard__sym">Dah jaga makan tapi perut tetap buncit.</p>
+          <div class="pcard__cause"><span>Punca</span> Komposisi bakteria usus mempengaruhi cara badan mengurus tenaga dan lemak.</div>
+        </article>
+      </div>
+
+      <div class="problem__why reveal">
+        <div class="why__left">
+          <h3>Kenapa usus kita jadi tak seimbang?</h3>
+          <p>Gaya hidup moden secara senyap membunuh bakteria baik setiap hari.</p>
+        </div>
+        <ul class="why__list">
+          <li><span>01</span> Makanan segera, bergula & berminyak</li>
+          <li><span>02</span> Kurang sayur, buah & serat</li>
+          <li><span>03</span> Stres kerja & kurang tidur</li>
+          <li><span>04</span> Pengambilan antibiotik</li>
+          <li><span>05</span> Kurang minum air & kurang bergerak</li>
+          <li><span>06</span> Faktor usia: bakteria baik semakin berkurang</li>
+        </ul>
+      </div>
+
+      <div class="problem__bridge reveal">
+        <p>Masalahnya bukan pada simptom. <strong>Masalahnya pada usus.</strong></p>
+        <p class="muted">Jadi penyelesaiannya perlu bermula dari dalam: <em>beri makan, tambah & lindungi</em> bakteria baik serentak.</p>
+        <a href="#solusi" class="btn btn--dark magnetic">Lihat Penyelesaiannya <span class="arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOLUTION ================= -->
+  <section class="section solution" id="solusi">
+    <div class="solution__bg"><div class="blob blob--s1"></div><div class="blob blob--s2"></div></div>
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Penyelesaian</span>
+        <h2 class="reveal">Perkenalkan <span class="grad">Triple Biotix</span></h2>
+        <p class="reveal">30 Billion CFU · Triple-Action Complete Gut Care. <strong>Support · Protect · Balance.</strong></p>
+      </div>
+
+      <div class="solution__hero">
+        <div class="product-stage reveal" id="productStage">
+          <div class="product-halo"></div>
+          <div class="product-ring"></div>
+          <img src="assets/img/product-box-float.webp" alt="Kotak Triple Biotix 30 Billion CFU" class="product-img float" width="640" height="640">
+          <div class="chip chip--a">0% Gula</div>
+          <div class="chip chip--b">30 Billion CFU</div>
+          <div class="chip chip--c">Mix Berry 🫐</div>
+          <div class="chip chip--d">+ L-Carnitine</div>
+        </div>
+
+        <div class="triple">
+          <div class="triple__item reveal">
+            <div class="triple__num">1</div>
+            <div>
+              <h3>Prebiotik <small>· Support</small></h3>
+              <p>“Makanan” untuk bakteria baik. Serat khas yang menyuburkan probiotik supaya ia membiak dan kekal di dalam usus.</p>
+            </div>
+          </div>
+          <div class="triple__item reveal">
+            <div class="triple__num">2</div>
+            <div>
+              <h3>Probiotik <small>· Protect</small></h3>
+              <p><strong>30 bilion CFU</strong> bakteria baik setiap sachet untuk menambah semula populasi bakteria baik dan menyekat bakteria jahat.</p>
+            </div>
+          </div>
+          <div class="triple__item reveal">
+            <div class="triple__num">3</div>
+            <div>
+              <h3>Postbiotik <small>· Balance</small></h3>
+              <p>Hasil metabolit aktif (seperti asid lemak rantai pendek) yang membantu menguatkan dinding usus dan menyokong imuniti.</p>
+            </div>
+          </div>
+          <div class="triple__item triple__item--plus reveal">
+            <div class="triple__num">+</div>
+            <div>
+              <h3>L-Carnitine <small>· Energy</small></h3>
+              <p>Membantu badan menukar lemak kepada tenaga, untuk rasa lebih bertenaga & fokus sepanjang hari.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefits -->
+      <div class="benefits">
+        <div class="benefit reveal"><div class="benefit__ic">
+          <svg viewBox="0 0 24 24"><path d="M8 3c0 3-3 4-3 8a7 7 0 0 0 14 0c0-2-1-3-3-3h-2c-2 0-3-1-3-3V3" /></svg></div>
+          <h4>Sokong Kesihatan Usus</h4><p>Nutrisi untuk probiotik</p></div>
+        <div class="benefit reveal"><div class="benefit__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M12 9v6M9 12h6"/></svg></div>
+          <h4>Kuatkan Sistem Imuniti</h4><p>Bakteria baik untuk usus</p></div>
+        <div class="benefit reveal"><div class="benefit__ic">
+          <svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 6a3 3 0 0 0 6 0L5 7zm14 0l-3 6a3 3 0 0 0 6 0l-3-6zM8 21h8"/></svg></div>
+          <h4>Bantu Penghadaman</h4><p>Sokong keseimbangan mikrobiom</p></div>
+        <div class="benefit reveal"><div class="benefit__ic">
+          <svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+          <h4>Lebih Tenaga & Fokus</h4><p>Dengan L-Carnitine</p></div>
+      </div>
+
+      <!-- Spec strip -->
+      <div class="specs reveal">
+        <div class="spec"><b><span class="count" data-to="0">0</span>%</b><span>Gula</span></div>
+        <div class="spec"><b><span class="count" data-to="10">0</span></b><span>Sachet / kotak</span></div>
+        <div class="spec"><b><span class="count" data-to="20">0</span>g</b><span>Setiap sachet</span></div>
+        <div class="spec"><b><span class="count" data-to="30">0</span>B</b><span>CFU</span></div>
+        <div class="spec"><b>🫐</b><span>Perisa Mix Berry</span></div>
+      </div>
+
+      <!-- Who can take -->
+      <div class="who">
+        <div class="who__media reveal">
+          <img src="assets/img/ad-perkenalkan.webp" alt="Duta Triple Biotix memegang kotak produk" loading="lazy">
+        </div>
+        <div class="who__copy">
+          <span class="eyebrow reveal">Untuk Semua</span>
+          <h3 class="reveal">Semua orang boleh amalkan</h3>
+          <p class="reveal">Formula <strong>0% gula</strong> dan berasaskan nutrisi harian. Sesuai dijadikan rutin seisi keluarga.</p>
+          <ul class="who__list">
+            <li class="reveal"><span class="tick">✓</span><div><b>Pesakit kencing manis</b><small>0% gula, tidak menambah gula dalam diet harian</small></div></li>
+            <li class="reveal"><span class="tick">✓</span><div><b>Pesakit darah tinggi</b><small>Sokong kesihatan usus tanpa kafein</small></div></li>
+            <li class="reveal"><span class="tick">✓</span><div><b>Ibu mengandung & menyusu</b><small>Membantu masalah sembelit & kembung yang biasa dialami</small></div></li>
+            <li class="reveal"><span class="tick">✓</span><div><b>Warga emas</b><small>Bakteria baik berkurang dengan usia</small></div></li>
+            <li class="reveal"><span class="tick">✓</span><div><b>Pekerja sibuk & aktif</b><small>Tenaga & fokus dengan L-Carnitine</small></div></li>
+          </ul>
+          <p class="note reveal">Bagi yang mempunyai penyakit kronik, sedang mengandung atau mengambil ubat preskripsi, dapatkan nasihat doktor sebelum memulakan sebarang suplemen.</p>
+        </div>
+      </div>
+
+      <!-- How to -->
+      <div class="howto">
+        <h3 class="reveal center">Cara Amalan: Semudah 1·2·3</h3>
+        <div class="howto__steps">
+          <div class="step reveal"><div class="step__n">1</div><h4>Koyak</h4><p>1 sachet (20g) sehari</p></div>
+          <div class="step__line"></div>
+          <div class="step reveal"><div class="step__n">2</div><h4>Bancuh</h4><p>Dengan 150–200ml air sejuk / suhu bilik</p></div>
+          <div class="step__line"></div>
+          <div class="step reveal"><div class="step__n">3</div><h4>Minum</h4><p>Nikmati perisa Mix Berry yang segar</p></div>
+        </div>
+        <p class="muted center small reveal">Elakkan air panas kerana suhu tinggi boleh menjejaskan bakteria hidup.</p>
+      </div>
+
+      <!-- Trust: KKM / HALAL / 1000+ -->
+      <div class="trust">
+        <div class="trust__card reveal">
+          <div class="cert" data-lightbox="assets/img/sijil-kkm.webp">
+            <div class="cert__ph"><span>🏛️</span>Sijil KKM</div>
+            <img src="assets/img/sijil-kkm.webp" alt="Sijil KKM" loading="lazy" onerror="this.remove()">
+          </div>
+          <h4>Diluluskan KKM</h4>
+          <p>Kementerian Kesihatan Malaysia</p>
+        </div>
+        <div class="trust__card reveal">
+          <div class="cert" data-lightbox="assets/img/sijil-halal.webp">
+            <div class="cert__ph"><span>☪️</span>Sijil HALAL</div>
+            <img src="assets/img/sijil-halal.webp" alt="Sijil Halal" loading="lazy" onerror="this.remove()">
+          </div>
+          <h4>Disahkan HALAL</h4>
+          <p>Bahan & proses patuh syariah</p>
+        </div>
+        <div class="trust__card trust__card--big reveal">
+          <div class="users">
+            <div class="avatars"><i></i><i></i><i></i><i></i><i>+</i></div>
+            <div class="users__num"><span class="count" data-to="1000" data-sep="1">0</span>+</div>
+          </div>
+          <h4>Pengguna Triple Biotix</h4>
+          <p>Dan terus bertambah setiap hari</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONI ================= -->
+  <section class="section testimoni" id="testimoni">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark reveal">Testimoni</span>
+        <h2 class="reveal">Apa kata <span class="grad-dark">pengguna sebenar</span></h2>
+        <p class="reveal">Tekan gambar untuk paparan penuh.</p>
+      </div>
+
+      <!-- Tambah gambar testimoni: letak fail dalam assets/img/ dan tambah satu <figure> -->
+      <div class="masonry" id="testiGrid">
+        <figure class="tcard reveal" data-lightbox="assets/img/testimoni-1.webp">
+          <img src="assets/img/testimoni-1.webp" alt="Testimoni pengguna Triple Biotix" loading="lazy">
+        </figure>
+        <figure class="tcard reveal" data-lightbox="assets/img/ad-ambassador.webp">
+          <img src="assets/img/ad-ambassador.webp" alt="Duta Triple Biotix" loading="lazy">
+        </figure>
+        <figure class="tcard reveal" data-lightbox="assets/img/product-box-sachet.webp">
+          <img src="assets/img/product-box-sachet.webp" alt="Kotak dan sachet Triple Biotix" loading="lazy">
+        </figure>
+        <figure class="tcard tcard--ph reveal"><div><span>📸</span>Testimoni akan datang</div></figure>
+        <figure class="tcard tcard--ph reveal"><div><span>💬</span>Testimoni akan datang</div></figure>
+        <figure class="tcard tcard--ph reveal"><div><span>⭐</span>Testimoni akan datang</div></figure>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Usus Sihat</span><span>✦</span><span>Hidup Lebih Berkualiti</span><span>✦</span><span>Support · Protect · Balance</span><span>✦</span><span>0% Gula</span><span>✦</span><span>30 Billion CFU</span><span>✦</span>
+        <span>Usus Sihat</span><span>✦</span><span>Hidup Lebih Berkualiti</span><span>✦</span><span>Support · Protect · Balance</span><span>✦</span><span>0% Gula</span><span>✦</span><span>30 Billion CFU</span><span>✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LUCKY DRAW ================= -->
+  <section class="section luckydraw" id="luckydraw">
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--gold reveal">🎁 Lucky Draw</span>
+        <h2 class="reveal">Beli & berpeluang <span class="gold">menang hadiah</span></h2>
+        <p class="reveal">Setiap pembelian layak menyertai cabutan bertuah Triple Biotix.</p>
+      </div>
+      <div class="ld__poster reveal" data-lightbox="assets/img/luckydraw.webp">
+        <div class="ld__shine"></div>
+        <div class="ld__ph">
+          <div class="gift">🎁</div>
+          <h3>Poster Lucky Draw</h3>
+          <p>Akan dikemaskini tidak lama lagi</p>
+        </div>
+        <img src="assets/img/luckydraw.webp" alt="Poster Lucky Draw Triple Biotix" loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="center reveal"><a href="#promosi" class="btn btn--gold btn--lg magnetic">Sertai Sekarang <span class="arrow">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ================= PROMOTION ================= -->
+  <section class="section promo" id="promosi">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal">Promosi Terhad</span>
+        <h2 class="reveal">Harga promosi tamat dalam</h2>
+      </div>
+
+      <div class="countdown reveal" id="countdown" aria-live="polite">
+        <div class="cd"><div class="cd__box"><span data-cd="h">01</span></div><small>Jam</small></div>
+        <div class="cd__sep">:</div>
+        <div class="cd"><div class="cd__box"><span data-cd="m">32</span></div><small>Minit</small></div>
+        <div class="cd__sep">:</div>
+        <div class="cd"><div class="cd__box"><span data-cd="s">10</span></div><small>Saat</small></div>
+      </div>
+
+      <div class="pricing" id="pricing"><!-- dijana oleh assets/js/main.js (CONFIG.packages) --></div>
+
+      <div class="guarantee reveal">
+        <div>🚚 <b>Penghantaran</b> seluruh Malaysia</div>
+        <div>🔒 <b>Pembayaran</b> selamat</div>
+        <div>💬 <b>Khidmat pelanggan</b> melalui WhatsApp</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Q&A ================= -->
+  <section class="section faq" id="soalan">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <span class="eyebrow eyebrow--dark reveal">Soalan Lazim</span>
+        <h2 class="reveal">Soalan & <span class="grad-dark">Jawapan</span></h2>
+      </div>
+
+      <div class="acc" id="faq">
+        <details class="acc__item reveal" open>
+          <summary>Apa itu Triple Biotix?</summary>
+          <div class="acc__body"><p>Triple Biotix ialah minuman serbuk penjagaan usus lengkap yang menggabungkan <b>Prebiotik, Probiotik (30 bilion CFU) dan Postbiotik</b>, serta <b>L-Carnitine</b>. Satu kotak mengandungi 10 sachet × 20g, perisa Mix Berry dan 0% gula.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Apa beza prebiotik, probiotik dan postbiotik?</summary>
+          <div class="acc__body"><p><b>Prebiotik</b> ialah makanan untuk bakteria baik. <b>Probiotik</b> ialah bakteria baik itu sendiri. <b>Postbiotik</b> ialah hasil metabolit yang dikeluarkan oleh bakteria baik dan memberi manfaat kepada dinding usus & imuniti. Gabungan ketiga-tiganya bekerja lebih lengkap berbanding probiotik sahaja.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Apa maksud 30 Billion CFU?</summary>
+          <div class="acc__body"><p>CFU (Colony Forming Units) ialah ukuran bilangan bakteria baik yang hidup. Setiap sachet membekalkan 30 bilion CFU.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Bagaimana cara makan dan bila waktu terbaik?</summary>
+          <div class="acc__body"><p>Bancuh 1 sachet dengan 150–200ml air sejuk atau suhu bilik, 1 kali sehari. Boleh diambil pada waktu pagi atau sebelum tidur. Jangan bancuh dengan air panas.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Pesakit kencing manis dan darah tinggi boleh minum?</summary>
+          <div class="acc__body"><p>Boleh. Triple Biotix mengandungi <b>0% gula</b>. Namun, jika anda sedang dalam rawatan atau mengambil ubat, kami sarankan berbincang dengan doktor anda terlebih dahulu.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Ibu mengandung dan menyusu boleh ambil?</summary>
+          <div class="acc__body"><p>Boleh dijadikan amalan, terutamanya untuk membantu masalah sembelit dan kembung yang biasa berlaku semasa mengandung. Dapatkan nasihat doktor atau pegawai perubatan anda terlebih dahulu sebagai langkah berjaga-jaga.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Kanak-kanak boleh minum?</summary>
+          <div class="acc__body"><p>Sila hubungi kami melalui WhatsApp untuk panduan sukatan yang sesuai mengikut umur anak anda.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Berapa lama baru nampak kesan?</summary>
+          <div class="acc__body"><p>Ia berbeza mengikut individu. Ramai pengguna mula rasa perubahan pada penghadaman dalam beberapa hari pertama. Untuk hasil yang lebih konsisten, amalkan sekurang-kurangnya <b>1 bulan</b> secara berterusan bersama pemakanan seimbang & air yang cukup.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Ada kesan sampingan?</summary>
+          <div class="acc__body"><p>Sesetengah orang mungkin rasa sedikit angin atau perubahan rentak buang air pada hari-hari awal. Ini biasa berlaku semasa usus menyesuaikan diri dengan bakteria baik dan biasanya hilang sendiri.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Boleh diambil bersama ubat atau antibiotik?</summary>
+          <div class="acc__body"><p>Boleh, tetapi jarakkan sekurang-kurangnya 2 jam daripada antibiotik supaya bakteria baik tidak terjejas. Rujuk doktor jika anda mengambil ubat preskripsi.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Adakah produk ini HALAL dan berdaftar dengan KKM?</summary>
+          <div class="acc__body"><p>Ya. Sijil HALAL dan KKM dipaparkan di bahagian “Penyelesaian” di atas.</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Bagaimana cara membeli dan berapa lama penghantaran?</summary>
+          <div class="acc__body"><p>Pilih pakej di bahagian Promosi dan tekan butang “Beli Sekarang”. Anda akan disambungkan terus ke WhatsApp kami untuk pengesahan pesanan. Penghantaran biasanya mengambil masa 2–5 hari bekerja (Semenanjung) dan 5–7 hari bekerja (Sabah/Sarawak).</p></div>
+        </details>
+        <details class="acc__item reveal">
+          <summary>Bagaimana cara simpan?</summary>
+          <div class="acc__body"><p>Simpan di tempat sejuk dan kering, jauh daripada cahaya matahari terus. Tidak perlu disimpan di dalam peti sejuk.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="hubungi">
+    <div class="container center">
+      <h2 class="reveal">Sebarang masalah? <span class="grad">Hubungi kami di WhatsApp</span></h2>
+      <p class="reveal">Team kami sedia membantu menjawab soalan dan menguruskan pesanan anda.</p>
+      <a href="#" class="btn btn--wa btn--lg magnetic reveal js-wa" data-msg="Hi, saya ada soalan tentang Triple Biotix.">
+        <svg viewBox="0 0 32 32" class="wa-ic" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.8 1.9 6.8L3 29l6.8-2.1c1.9 1 4 1.6 6.2 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-3.9-.6-5.6-1.6l-.4-.2-4 1.2 1.3-3.9-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C5.3 9.8 10.1 5 16 5s10.6 4.8 10.6 10.6S21.9 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.8 5.1 2.9 1.1 3.4.9 4.1.9.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/></svg>
+        WhatsApp Kami Sekarang
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <div class="brand-pill brand-pill--light">Lab <b>Biotix</b></div>
+        <p class="footer__tag">“Penjagaan Usus Bermula Dari Sekarang”</p>
+      </div>
+      <div class="footer__refs">
+        <h5>Rujukan Kajian</h5>
+        <ol>
+          <li>Kajian keratan rentas ke atas 400 pesakit luar warga emas di 4 klinik kesihatan, Pantai Timur Semenanjung Malaysia: prevalens sembelit kronik 32.3%. (IIUM Repository)</li>
+          <li>Kajian 318 orang dewasa (18–59 tahun) di Malaysia: 84.6% mengambil serat kurang daripada 25g sehari. (Makara Journal of Health Research, 2019)</li>
+          <li>Johns Hopkins Medicine, “The Brain in Your Gut”: lebih 90% serotonin dihasilkan dalam saluran gastrousus.</li>
+          <li>Liu, Wang & Wu (2022). Modulation of Gut Microbiota and Immune System by Probiotics, Pre-biotics, and Post-biotics. <i>Frontiers in Nutrition</i>.</li>
+        </ol>
+      </div>
+    </div>
+    <p class="disclaimer">Triple Biotix ialah suplemen makanan dan bukan ubat. Produk ini tidak bertujuan untuk mendiagnosis, merawat, menyembuh atau mencegah sebarang penyakit. Keputusan berbeza mengikut individu. Amalkan pemakanan seimbang dan gaya hidup sihat. Sila rujuk doktor jika simptom berterusan.</p>
+    <p class="copy">© <span id="year"></span> Lab Biotix. Hak cipta terpelihara.</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="#" class="wa-float js-wa" data-msg="Hi, saya berminat dengan Triple Biotix." aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.5.7 4.8 1.9 6.8L3 29l6.8-2.1c1.9 1 4 1.6 6.2 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm5.8 15.3c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.8 5.1 2.9 1.1 3.4.9 4.1.9.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/></svg>
+  <span class="wa-float__pulse"></span>
+</a>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta__timer">⏳ Tamat dalam <b data-cd-mini>01:32:10</b></div>
+  <a href="#promosi" class="btn btn--glow btn--sm">Beli Sekarang</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" aria-label="Tutup">×</button>
+  <img alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
