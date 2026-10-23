@@ -197,6 +197,18 @@ const CONFIG = {
   tick();
   setInterval(tick, 1000);
 
+  /* ---------- Pilihan: cycle highlight Doktor → Selebriti → Ustaz → Veteran ---------- */
+  const roles = $$('.role');
+  if (roles.length) {
+    let ri = 0;
+    roles[0].classList.add('on');
+    if (!reduceMotion) setInterval(() => {
+      roles[ri].classList.remove('on');
+      ri = (ri + 1) % roles.length;
+      roles[ri].classList.add('on');
+    }, 1600);
+  }
+
   /* ---------- Lightbox ---------- */
   const lb = $('#lightbox');
   const lbImg = $('img', lb);

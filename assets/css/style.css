@@ -375,7 +375,7 @@ p { margin: 0 0 1em; }
 .step__line { flex: 1; max-width: 120px; height: 2px; margin-top: 40px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent); }
 .howto .muted { color: rgba(255,255,255,.5); margin-top: 26px; }
 
-.trust { margin-top: 110px; display: grid; grid-template-columns: 1fr 1fr 1.3fr; gap: 20px; }
+.trust { margin: 110px auto 0; max-width: 760px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .trust__card {
   text-align: center; padding: 30px 22px; border-radius: 24px; background: #fff; color: var(--ink);
   box-shadow: var(--shadow-lg); transition: transform .4s var(--ease), opacity 1s var(--ease);
@@ -531,6 +531,56 @@ p { margin: 0 0 1em; }
 .footer__refs ol { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: .8rem; }
 .disclaimer { padding: 16px; border-radius: 14px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); font-size: .8rem; }
 .copy { margin: 20px 0 0; font-size: .8rem; }
+
+/* =========================================================
+   PILIHAN (Doktor, Selebriti, Ustaz, Veteran)
+   ========================================================= */
+.pilihan { background: radial-gradient(900px 400px at 50% 0%, rgba(31,107,255,.07), transparent 70%), #fff; overflow: hidden; padding-bottom: 100px; }
+.pilihan__head { margin-bottom: 50px; max-width: 1000px; }
+.pilihan__head h2 { line-height: 1.25; }
+.roles { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0 .3em; }
+.role { position: relative; color: var(--navy); transition: color .5s var(--ease); }
+.role::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: .02em; height: .14em; border-radius: 99px;
+  background: linear-gradient(110deg, var(--teal), var(--blue) 50%, var(--purple));
+  transform: scaleX(0); transform-origin: left; transition: transform .6s var(--ease);
+}
+.role.on { color: var(--blue); }
+.role.on::after { transform: scaleX(1); }
+.role-sep { margin-left: -.3em; color: var(--muted); }
+
+.pilihan__reel {
+  position: relative; overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.pilihan__track { display: flex; width: max-content; animation: marquee 55s linear infinite; padding: 10px 0 30px; }
+.pilihan__reel:hover .pilihan__track { animation-play-state: paused; }
+.pilihan__track img {
+  height: clamp(220px, 30vw, 380px); width: auto; margin-right: 20px; max-width: none; border-radius: 26px;
+  box-shadow: 0 30px 60px -30px rgba(11,31,77,.45); transition: transform .6s var(--ease);
+}
+.pilihan__track img:hover { transform: scale(1.03); }
+
+.pilihan__counter {
+  margin: 30px auto 0; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 6px 22px; text-align: left;
+}
+.pc__pre { font-size: clamp(1.2rem, 2.4vw, 1.6rem); font-weight: 700; color: var(--muted); }
+.pc__num {
+  font-size: clamp(4rem, 11vw, 7.5rem); font-weight: 800; line-height: 1; letter-spacing: -.04em; font-variant-numeric: tabular-nums;
+  background: linear-gradient(110deg, var(--teal), var(--blue) 50%, var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.pc__num i { font-style: normal; }
+.pc__text { font-size: clamp(1.15rem, 2.4vw, 1.6rem); font-weight: 600; line-height: 1.3; color: var(--ink); }
+.pc__text b { font-weight: 800; color: var(--blue); }
+.pilihan__stars { text-align: center; margin-top: 18px; color: var(--muted); font-size: .95rem; }
+.pilihan__stars span { color: var(--gold-2); letter-spacing: 4px; margin-right: 6px; }
+@media (max-width: 600px) {
+  .pilihan__counter { flex-direction: column; text-align: center; }
+  .pilihan__track { animation-duration: 40s; }
+  .pilihan__track img { margin-right: 12px; }
+  .pilihan__track img { border-radius: 18px; }
+}
 
 /* ---------- Floating WA ---------- */
 .wa-float {
